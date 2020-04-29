@@ -5,7 +5,7 @@ function NomadDiscover() {
     <div className="p1">
       <p>Nomad Discover</p>
       <img
-        src="/images/nomaddiscoverpic.png"
+        src="/nomaddiscoverpic.png"
         alt="Nomad Discover app on Macbook and iPhone"
       />
     </div>
