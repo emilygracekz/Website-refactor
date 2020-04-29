@@ -1,13 +1,13 @@
 import React from "react";
 
-function CurrencyConverter() {
+function Restock() {
   return (
     <div className="p3">
-      <p>Currency Converter</p>
+      <p>ReStock</p>
       <img
         className="previewImage"
-        src="images/currencypic.png"
-        alt="Currency converter app on Macbook and iPhone"
+        src="images/app_logo.png"
+        alt="Restock logo"
       />
 
       <style jsx>{`
@@ -25,11 +25,11 @@ function CurrencyConverter() {
         }
 
         .previewImage {
-          max-width: 300px;
+          max-width: 200px;
         }
       `}</style>
     </div>
   );
 }
 
-export default CurrencyConverter;
+export default Restock;

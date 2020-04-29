@@ -1,5 +1,8 @@
 import Head from "next/head";
 import NomadDiscover from './components/NomadDiscover';
+import ImpTimer from './components/ImpTimer';
+import CurrencyConverter from './components/CurrencyConverter';
+import Restock from './components/Restock';
 
 export default function Home() {
   return (
@@ -34,6 +37,9 @@ export default function Home() {
         <section className="projects">
           <h2>what i've been spending my time on</h2>
           <NomadDiscover />
+          <ImpTimer />
+          <CurrencyConverter />
+          <Restock />
         </section>
       </main>
 
@@ -113,6 +119,7 @@ export default function Home() {
           justify-content: center;
           align-items: center;
           text-align: center;
+          margin-top: 350px;
         }
 
         a {
