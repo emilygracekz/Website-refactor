@@ -1,8 +1,8 @@
 import Head from "next/head";
-import NomadDiscover from './components/NomadDiscover';
-import ImpTimer from './components/ImpTimer';
-import CurrencyConverter from './components/CurrencyConverter';
-import Restock from './components/Restock';
+import NomadDiscover from "./components/NomadDiscover";
+import ImpTimer from "./components/ImpTimer";
+import CurrencyConverter from "./components/CurrencyConverter";
+import Restock from "./components/Restock";
 
 export default function Home() {
   return (
@@ -36,10 +36,16 @@ export default function Home() {
         </section>
         <section className="projects">
           <h2>what i've been spending my time on</h2>
-          <NomadDiscover />
-          <ImpTimer />
-          <CurrencyConverter />
-          <Restock />
+          <div className="center">
+            <div className="right">
+              <NomadDiscover />
+              <ImpTimer />
+            </div>
+            <div className="left">
+              <CurrencyConverter />
+              <Restock />
+            </div>
+          </div>
         </section>
       </main>
 
@@ -98,6 +104,18 @@ export default function Home() {
           font-size: 50px;
         }
 
+        .right {
+          width: 50%;
+          float: right;
+          text-align: center;
+        }
+
+        .left {
+          width: 50%;
+          float: left;
+          text-align: center;
+        }
+
         p {
           font-family: "Montserrat", sans-serif;
           color: var(--blue);
@@ -131,7 +149,7 @@ export default function Home() {
           height: 1em;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 660px) {
           .grid {
             width: 100%;
             flex-direction: column;
@@ -140,6 +158,22 @@ export default function Home() {
           h1,
           h2 {
             font-size: 30px;
+          }
+
+          .right {          
+            width: 100%;
+            text-align: center;
+          }
+
+          .left {
+            width: 100%;
+            text-align: center;
+          }
+
+          .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
           }
 
           .projects h2 {

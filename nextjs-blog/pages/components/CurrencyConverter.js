@@ -2,7 +2,7 @@ import React from "react";
 
 function CurrencyConverter() {
   return (
-    <div className="p3">
+    <div>
       <p>Currency Converter</p>
       <img
         className="previewImage"
@@ -15,18 +15,28 @@ function CurrencyConverter() {
           color: #f21d37;
           text-decoration: none;
           text-align: center;
-          font-weight: bold;
+          letter-spacing: 2px;
+          font-size: 20px;
         }
-
-        .container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-
         .previewImage {
+          max-width: 500px;
+        }
+
+        @media (min-width: 700px) {
+          p {
+            font-size: 30px;
+          }
+        }
+
+        @media (max-width: 900px) {
+          .previewImage {
           max-width: 300px;
         }
+
+        .p {
+          letter-spacing: none;
+        }
+      }
       `}</style>
     </div>
   );

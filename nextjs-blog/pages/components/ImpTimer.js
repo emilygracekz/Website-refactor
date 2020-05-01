@@ -2,7 +2,7 @@ import React from "react";
 
 function ImpTimer() {
   return (
-    <div className="p3">
+    <div>
       <p>Impromptu Timer</p>
       <img 
         className="previewImage"
@@ -15,18 +15,29 @@ function ImpTimer() {
           color: #f21d37;
           text-decoration: none;
           text-align: center;
-          font-weight: bold;
-        }
-
-        .container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          letter-spacing: 2px;
+          font-size: 20px;
         }
 
         .previewImage {
+          max-width: 500px;
+        }
+
+        @media (min-width: 700px) {
+          p {
+            font-size: 30px;
+          }
+        }
+
+        @media (max-width: 900px) {
+          .previewImage {
           max-width: 300px;
         }
+
+        .p {
+          letter-spacing: none;
+        }
+      }
       `}</style>
     </div>
   );
