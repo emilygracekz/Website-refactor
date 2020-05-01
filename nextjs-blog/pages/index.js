@@ -101,13 +101,13 @@ export default function Home() {
         }
 
         .right {
-          width: 50%;
+          width: 40%;
           float: right;
           text-align: center;
         }
 
         .left {
-          width: 50%;
+          width: 40%;
           float: left;
           text-align: center;
         }
@@ -146,10 +146,9 @@ export default function Home() {
         }
 
         @media (max-width: 660px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
+          .projects {
+          height: 80em;
+        }
 
           h1,
           h2 {
