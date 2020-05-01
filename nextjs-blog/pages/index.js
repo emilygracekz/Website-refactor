@@ -1,8 +1,5 @@
 import Head from "next/head";
-import NomadDiscover from "./components/NomadDiscover";
-import ImpTimer from "./components/ImpTimer";
-import CurrencyConverter from "./components/CurrencyConverter";
-import Restock from "./components/Restock";
+import { NomadDiscover, ImpTimer, CurrencyConverter, Restock } from '../public/styles/parts';
 
 export default function Home() {
   return (
@@ -25,12 +22,11 @@ export default function Home() {
           <h1>emily kondziola</h1>
           <h2>front-end developer</h2>
           <p>
-            Hi, my name is Emily and I'm a front-end web developer specializing
+            Hi there, my name is Emily and I'm a front-end web developer specializing
             in <mark>Vanilla Javascript, React and React Native.</mark> Please
-            check out some of my projects below, or view my
-            <a href="https://github.com/emilygracekz/Personal-website/raw/master/Emily_Kondziola_Resume_SP2020.pdf">
-              {" "}
-              resume.
+            check out some of my projects below, or view my {''}
+              <a href="https://github.com/emilygracekz/Personal-website/raw/master/Emily_Kondziola_Resume_SP2020.pdf">
+            resume.
             </a>
           </p>
         </section>
@@ -99,7 +95,7 @@ export default function Home() {
         }
 
         .projects h2 {
-          border-bottom: 1px solid var(--yellow);
+          border-bottom: 1px solid var(--lightBlue);
           padding-bottom: 20px;
           font-size: 50px;
         }
@@ -125,14 +121,14 @@ export default function Home() {
         }
 
         .bg p {
-          border-top: 1px solid var(--yellow);
+          border-top: 1px solid var(--lightBlue);
           padding-top: 20px;
         }
 
         footer {
           width: 100%;
           height: 100px;
-          border-top: 1px solid var(--yellow);
+          border-top: 1px solid var(--lightBlue);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -141,8 +137,8 @@ export default function Home() {
         }
 
         a {
-          color: var(--red);
-          text-decoration: none;
+          color: var(--lightBlue);
+          
         }
 
         .logo {
@@ -194,9 +190,7 @@ export default function Home() {
           padding: 15px;
           margin: 0;
           background-color: var(--dark);
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: "Montserrat", sans-serif;
         }
 
         * {
@@ -210,7 +204,7 @@ export default function Home() {
           --lightBlue: #65bff6;
           --yellow: #f7dc68;
           --dark: #26303d;
-          --red: #f21d37;
+          --red: #d9544d;
         }
       `}</style>
     </div>
