@@ -33,14 +33,9 @@ export default function Home() {
         <section className="projects">
           <h2>what i've been spending my time on</h2>
           <div className="center">
-            <div className="right">
               <NomadDiscover />
               <ImpTimer />
-            </div>
-            <div className="left">
-              <CurrencyConverter />
               <Restock />
-            </div>
           </div>
         </section>
       </main>
@@ -62,7 +57,7 @@ export default function Home() {
         }
 
         .projects {
-          height: 50em;
+          height: 65em;
         }
 
         main {
@@ -100,18 +95,6 @@ export default function Home() {
           font-size: 50px;
         }
 
-        .right {
-          width: 40%;
-          float: right;
-          text-align: center;
-        }
-
-        .left {
-          width: 40%;
-          float: left;
-          text-align: center;
-        }
-
         p {
           font-family: "Montserrat", sans-serif;
           color: var(--blue);
@@ -147,7 +130,7 @@ export default function Home() {
 
         @media (max-width: 660px) {
           .projects {
-          height: 80em;
+          height: 100em;
         }
 
           h1,
@@ -204,6 +187,7 @@ export default function Home() {
           --yellow: #f7dc68;
           --dark: #26303d;
           --red: #d9544d;
+          --black: #565656;
         }
       `}</style>
     </div>
