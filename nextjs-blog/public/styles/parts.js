@@ -8,28 +8,29 @@ export function NomadDiscover() {
         <div className="image">
           <img
             className="previewImage"
-            src="images/nomaddiscover.png"
+            src="images/squarenomad.png"
             alt="Nomad Discover app on Macbook and iPhone"
           />
         </div>
         <div className="text">
           <h3>Nomad Discover</h3>
           <p>
-            An app aimed at answering the question every digital nomad has:
-            where should I go next? Nomad Discover takes criteria like budget
-            and weather to suggest a place for nomads to go next based off data
-            from Nomad List.
+            An app that suggests where digital nomads should go next. Nomad
+            Discover takes criteria like budget and weather to suggest a place
+            for nomads to go based off data from Nomad List.
           </p>
-        </div>
-        <div className="stack"></div>
-        <div className="links">
-          <div className="repo">
-            <a href="https://github.com/emilygracekz/nomadDiscover">
-              VIEW REPO
-            </a>
+          <div className="links">
+            <div className="repo">
+              <a href="https://github.com/emilygracekz/nomadDiscover">
+                VIEW REPO
+              </a>
+            </div>
+            <div className="liveSite">
+              <a href="">LIVE SITE</a>
+            </div>
           </div>
-          <div className="liveSite">
-            <a href="">LIVE SITE</a>
+          <div className="stack">
+            <img src="images/baselogos.png" className="stackImage"></img>
           </div>
         </div>
       </div>
@@ -44,15 +45,21 @@ export function ImpTimer() {
         <div className="image">
           <img
             className="previewImage"
-            src="images/hold.png"
+            src="images/squarenomad.png"
             alt="Nomad Discover app on Macbook and iPhone"
           />
         </div>
         <div className="text">
           <h3>Impromptu Timer</h3>
-          <p>A tool for college forensics competitors to practice speeches.</p>
+          <p>
+            A tool for college forensics competitors to practice speeches. This
+            timer counts down from seven minutes and provides a random quotation
+            when the start button is pressed.
+          </p>
         </div>
-        <div className="stack"></div>
+        <div className="stack">
+          <img src="images/baselogos.png" className="stackImage"></img>
+        </div>
         <div className="links">
           <div className="repo">
             <a href="https://github.com/emilygracekz/impromptu-timer">
@@ -68,47 +75,18 @@ export function ImpTimer() {
   );
 }
 
-export function CurrencyConverter() {
-  return (
-    <StyledProjects>
-      <div className="box">
-        <div className="image">
-          <img
-            className="previewImage"
-            src="images/currency.png"
-            alt="Currency converter app on Macbook and iPhone"
-          />
-        </div>
-        <div className="text">
-          <h3>Currency Converter</h3>
-          <p>An app that calls an API to convert one currency to another</p>
-          <div className="stack"></div>
-          <div className="links">
-            <div className="repo">
-              <a href="https://github.com/emilygracekz/currencyConverter">
-                VIEW REPO
-              </a>
-            </div>
-            <div className="liveSite">
-              <a href="/">LIVE SITE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </StyledProjects>
-  );
-}
-
 export function Restock() {
   return (
     <StyledProjects>
       <div className="box">
         <div className="image">
-          <img
-            className="previewImage"
-            src="images/app_logo.png"
-            alt="Restock logo"
-          />
+          <StyledRestock>
+            <img
+              className="previewImage"
+              src="images/app_logo.png"
+              alt="Restock logo"
+            />
+          </StyledRestock>
         </div>
         <div className="text">
           <h3>ReStock</h3>
@@ -119,15 +97,17 @@ export function Restock() {
             development team.
           </p>
         </div>
-        <div className="stack"></div>
+        <div className="stack">
+          <img src="images/baselogos.png" className="stackImage"></img>
+        </div>
         <div className="links">
           <div className="repo">
-            <a href="https://play.google.com/store/apps/details?id=com.zachl.restock">
-              DOWNLOAD
+            <a href="https://github.com/emilygracekz/impromptu-timer">
+              VIEW REPO
             </a>
           </div>
           <div className="liveSite">
-            <a href="https://www.getrestock.com/">WEBSITE</a>
+            <a href="/">LIVE SITE</a>
           </div>
         </div>
       </div>
@@ -138,19 +118,15 @@ export function Restock() {
 const StyledProjects = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justfy-content: center;
 
   .box {
-    background: #dcdcdc;
-    border: 1px solid white;
+    background: #12171e;
     border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 320px;
-    height: 500px;
+    padding: 25px;
+    margin-top: 35px;
+    width: 330px;
+    height: 570px;
 
     -webkit-box-shadow: -1px 5px 20px 5px rgba(0, 0, 0, 0.32);
     box-shadow: -1px 5px 20px 5px rgba(0, 0, 0, 0.32);
@@ -160,36 +136,38 @@ const StyledProjects = styled.div`
     text-align: center;
   }
 
+  .previewImage {
+    max-width: 150px;
+  }
+
   .stack {
-    border-bottom: 1px solid var(--dark) 50%;
-    padding-top: 30px;
+    padding-top: 0px;
+    text-align: center;
   }
 
-  .links {
-    margin-bottom: 20px;
-    margin-top: 5px;
+  .stackImage {
+    width: 130px;
   }
 
-  .repo {
-    float: right;
-  }
-
-  .liveSite {
-    float: left;
+  a {
+    color: var(--lightBlue);
+    margin-top: 30px;
   }
 
   h3 {
-    color: var(--dark);
+    font-size: 25px;
+    padding-top: 10px;
+    text-align: left;
+    color: var(--yellow);
     font-weight: bold;
     letter-spacing: 1px;
     text-decoration: none;
-    text-align: center;
     margin-top: 2px;
     margin-bottom: 0px;
   }
 
   a {
-    color: var(--dark);
+    color: var(--grey);
     padding-top: 0px;
     text-decoration: none;
     padding-bottom: 20px;
@@ -203,13 +181,14 @@ const StyledProjects = styled.div`
   }
 
   p {
-    color: var(--dark);
+    color: var(--grey);
     text-decoration: none;
     font-size: 20px;
     border-bottom: 1px solid var(--dark);
     padding-bottom: 10px;
     margin-top: 5px;
-    text-align: center;
+    text-align: left;
+    line-height: 1.2;
   }
 
   .previewImage {
@@ -218,10 +197,9 @@ const StyledProjects = styled.div`
   }
 
   @media (min-width: 750px) {
-
     .box {
       width: 700px;
-      height: 350px;
+      height: 370px;
     }
 
     .image {
@@ -230,23 +208,46 @@ const StyledProjects = styled.div`
     }
 
     .text {
-    float: right;
-    width: 50%;
+      padding-top: 0px;
+      float: right;
+      width: 50%;
+    }
+
+    .repo {
+      float: right;
+    }
+
+    .liveSite {
+      float: left;
+    }
+
+    p,
+    h3 {
+      text-align: left;
+      max-width: 100%;
+    }
+
+    a {
+      color: var(--blue);
     }
 
     h3 {
       letter-spacing: 0.5;
       font-size: 25px;
-      margin-bottom: 0px;
       text-decoration: none;
     }
 
-    p {
-      font-size: 20px;
+    .stack {
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .links {
+      text-align: center;
     }
 
     .previewImage {
-      max-width: 300px;
+      max-width: 400px;
     }
   }
 
@@ -257,6 +258,20 @@ const StyledProjects = styled.div`
 
     .box {
       width: 1000px;
+    }
+  }
+`;
+
+const StyledRestock = styled.div`
+  .previewImage {
+    max-width: 190px;
+    padding-bottom: 0px;
+  }
+
+  @media (min-width: 750px) {
+    .previewImage {
+      max-width: 250px;
+      padding-bottom: 0px;
     }
   }
 `;

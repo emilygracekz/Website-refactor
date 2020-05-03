@@ -97,7 +97,7 @@ export default function Home() {
 
         p {
           font-family: "Montserrat", sans-serif;
-          color: var(--blue);
+          color: var(--grey);
           line-height: 1.55;
           margin: 0;
           font-size: 25px;
@@ -128,7 +128,7 @@ export default function Home() {
           height: 1em;
         }
 
-        @media (max-width: 660px) {
+        @media (max-width: 760px) {
           .projects {
           height: 100em;
         }
@@ -188,6 +188,7 @@ export default function Home() {
           --dark: #26303d;
           --red: #d9544d;
           --black: #565656;
+          --grey: #C0C0C0;
         }
       `}</style>
     </div>
