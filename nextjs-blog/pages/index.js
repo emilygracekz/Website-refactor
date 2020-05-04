@@ -46,10 +46,20 @@ export default function Home() {
         </section>
       </main>
 
-      <footer>
+      <footer className='footer'>
         <p>
-          Let's build something together. <br />
-          Contact me at <mark> emilygracekondziola@gmail.com</mark>
+        <a href='https://github.com/emilygracekz'>
+        <img src="images/github.png"></img> 
+        </a>
+        <a href='https://www.linkedin.com/in/emilykondziola/'>
+        <img src="images/linkedin.png"></img> 
+        </a>
+        <a href='https://twitter.com/emilygracekz'>
+        <img src="images/twitter.png"></img>
+        </a>
+        <br />
+          Nice to meet you 😉<br />
+          Drop a line at <mark> emilygracekondziola@gmail.com</mark>
         </p>
       </footer>
 
@@ -114,6 +124,10 @@ export default function Home() {
           text-decoration: none;
         }
 
+        .projects a:hover {
+          font-size: 23px;
+        }
+
         .right {
           width: 100%;
           text-align: center;
@@ -138,12 +152,18 @@ export default function Home() {
 
         footer {
           width: 100%;
-          height: 100px;
           border-top: 1px solid var(--lightBlue);
           display: flex;
           justify-content: center;
           align-items: center;
           text-align: center;
+          height: 10em;
+        }
+
+        footer img {
+          max-width: 30px;
+          margin-left: 6px;
+          margin-right: 6px;
         }
 
         @media (min-width: 700px) {
