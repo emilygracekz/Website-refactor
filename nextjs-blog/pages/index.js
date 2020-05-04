@@ -1,5 +1,10 @@
 import Head from "next/head";
-import { NomadDiscover, ImpTimer, CurrencyConverter, Restock } from '../public/styles/parts';
+import {
+  NomadDiscover,
+  ImpTimer,
+  CurrencyConverter,
+  Restock,
+} from "../public/styles/parts";
 
 export default function Home() {
   return (
@@ -22,20 +27,21 @@ export default function Home() {
           <h1>emily kondziola</h1>
           <h2>front-end developer</h2>
           <p>
-            Hi there, my name is Emily and I'm a front-end web developer specializing
-            in <mark>Vanilla Javascript, React and React Native.</mark> Please
-            check out some of my projects below, or view my {''}
-              <a href="https://github.com/emilygracekz/Personal-website/raw/master/Emily_Kondziola_Resume_SP2020.pdf">
-            resume.
+            Hi there, my name is Emily and I'm a front-end web developer
+            specializing in{" "}
+            <mark>Vanilla Javascript, React and React Native.</mark> Please
+            check out some of my projects below, or view my {""}
+            <a href="https://github.com/emilygracekz/Personal-website/raw/master/Emily_Kondziola_Resume_SP2020.pdf">
+              resume.
             </a>
           </p>
         </section>
         <section className="projects">
           <h2>what i've been spending my time on</h2>
           <div className="center">
-              <NomadDiscover />
-              <ImpTimer />
-              <Restock />
+            <NomadDiscover />
+            <ImpTimer />
+            <Restock />
           </div>
         </section>
       </main>
@@ -53,15 +59,35 @@ export default function Home() {
         }
 
         .bg {
-          height: 50em;
-        }
+            height: 50em;
+          }
 
         .projects {
-          height: 65em;
+          height: 130em;
         }
 
         main {
           flex: 1;
+        }
+
+        h1 {
+          font-size: 32px;
+          font-family: "Merriweather", serif;
+          letter-spacing: 1px;
+          color: var(--purple);
+          margin: 0;
+          padding-top: 200px;
+          font-weight: lighter;
+        }
+
+        h2 {
+          font-size: 32px;
+          font-family: "Merriweather", serif;
+          color: var(--green);
+          font-style: italic;
+          margin-bottom: 20px;
+          margin-top: 0;
+          text-align: left;
         }
 
         mark {
@@ -69,43 +95,45 @@ export default function Home() {
           border-radius: 2px;
         }
 
-        h1 {
-          font-family: "Merriweather", serif;
-          letter-spacing: 1px;
-          color: var(--purple);
-          font-weight: lighter;
-          font-size: 60px;
-          margin: 0;
-          padding-top: 200px;
-        }
-
-        h2 {
-          font-family: "Merriweather", serif;
-          color: var(--green);
-          font-style: italic;
-          font-size: 60px;
-          margin-bottom: 20px;
-          margin-top: 0;
-          text-align: left;
-        }
-
-        .projects h2 {
-          border-bottom: 1px solid var(--lightBlue);
-          padding-bottom: 20px;
-          font-size: 50px;
-        }
-
         p {
           font-family: "Montserrat", sans-serif;
           color: var(--grey);
+          font-size: 20px;
           line-height: 1.55;
-          margin: 0;
-          font-size: 25px;
         }
 
         .bg p {
-          border-top: 1px solid var(--lightBlue);
-          padding-top: 20px;
+            border-top: 1px solid var(--lightBlue);
+            padding-top: 20px;
+          }
+
+        a {
+          font-size: 20px;
+          line-height: 1.55;
+          color: var(--blue);
+          text-decoration: none;
+        }
+
+        .right {
+          width: 100%;
+          text-align: center;
+        }
+
+        .left {
+          width: 100%;
+          text-align: center;
+        }
+
+        .center {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .projects h2 {
+          font-size: 30px;
+          border-bottom: 1px solid var(--lightBlue);
+          padding-bottom: 20px;
         }
 
         footer {
@@ -116,53 +144,55 @@ export default function Home() {
           justify-content: center;
           align-items: center;
           text-align: center;
-          margin-top: 350px;
         }
 
-        a {
-          color: var(--lightBlue);
-          
-        }
+        @media (min-width: 700px) {
 
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 760px) {
           .projects {
-          height: 100em;
-        }
-
-          h1,
-          h2 {
-            font-size: 30px;
+            height: 131em;
           }
 
-          .right {          
-            width: 100%;
-            text-align: center;
-          }
-
-          .left {
-            width: 100%;
-            text-align: center;
-          }
-
-          .center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+          h1, h2 {
+            font-size: 45px;
           }
 
           .projects h2 {
-            font-size: 30px;
+            font-size: 40px;
+
+          }
+        }
+
+        @media (min-width: 960px) {
+          .bg {
+            height: 50em;
           }
 
-          p,
-          a {
-            font-size: 17px;
-            line-height: 1.55;
+          .projects {
+            height: 135em;
           }
+
+          h1 {
+            font-size: 60px;
+          }
+
+          h2 {
+            font-size: 60px;
+          }
+
+          .projects h2 {
+            font-size: 50px;
+          }
+
+          p, a {
+            font-size: 25px;
+          }
+
+          @media (min-width: 960px) {
+            .projects {
+              height: 85em;
+            }
+
+        }
         }
       `}</style>
 
@@ -188,7 +218,7 @@ export default function Home() {
           --dark: #26303d;
           --red: #d9544d;
           --black: #565656;
-          --grey: #C0C0C0;
+          --grey: #c0c0c0;
         }
       `}</style>
     </div>
