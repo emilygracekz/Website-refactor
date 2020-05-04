@@ -137,7 +137,6 @@ const StyledProjects = styled.div`
 
   .previewImage {
     max-width: 150px;
-    margin-left: 0px;
   }
 
   .stack {
@@ -298,7 +297,7 @@ const StyledRestock = styled.div`
 
   @media (min-width: 960px) {
     .previewImage {
-      max-width: 250px;
+      max-width: 290px;
       padding-bottom: 0px;
     }
   }

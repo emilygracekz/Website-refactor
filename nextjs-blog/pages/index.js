@@ -58,7 +58,7 @@ export default function Home() {
         <img src="images/twitter.png"></img>
         </a>
         <br />
-          Nice to meet you 😉<br />
+          Nice to meet you. 😉<br />
           Drop a line at <mark> emilygracekondziola@gmail.com</mark>
         </p>
       </footer>
@@ -124,6 +124,10 @@ export default function Home() {
           text-decoration: none;
         }
 
+        a:hover {
+          opacity: 50%;
+        }
+
         .projects a:hover {
           font-size: 23px;
         }
@@ -164,6 +168,10 @@ export default function Home() {
           max-width: 30px;
           margin-left: 6px;
           margin-right: 6px;
+        }
+
+        img:hover {
+          opacity: 50%;
         }
 
         @media (min-width: 700px) {
@@ -238,7 +246,7 @@ export default function Home() {
           --dark: #26303d;
           --red: #d9544d;
           --black: #565656;
-          --grey: #c0c0c0;
+          --grey: rgb(167, 167, 167);
         }
       `}</style>
     </div>
