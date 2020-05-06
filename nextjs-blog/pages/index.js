@@ -2,7 +2,6 @@ import Head from "next/head";
 import {
   NomadDiscover,
   ImpTimer,
-  CurrencyConverter,
   Restock,
 } from "../public/styles/parts";
 
@@ -58,8 +57,8 @@ export default function Home() {
         <img src="images/twitter.png"></img>
         </a>
         <br />
-          Nice to meet you. 😉<br />
-          Drop a line at <mark> emilygracekondziola@gmail.com</mark>
+          Nice to meet you 🤠<br />
+          Drop me a line at <mark> emilygracekondziola@gmail.com</mark>
         </p>
       </footer>
 

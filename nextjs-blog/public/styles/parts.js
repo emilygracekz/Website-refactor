@@ -9,8 +9,8 @@ export function NomadDiscover() {
         <div className="image">
           <img
             className="previewImage"
-            src="images/squarenomad.png"
-            alt="Nomad Discover app on Macbook and iPhone"
+            src="images/nomaddiscover.png"
+            alt="Nomad Discover app"
           />
         </div>
         <div className="text">
@@ -48,7 +48,7 @@ export function ImpTimer() {
         <div className="image">
           <img
             className="previewImage"
-            src="images/squarenomad.png"
+            src="images/imptimer.png"
             alt="Nomad Discover app on Macbook and iPhone"
           />
         </div>
@@ -96,7 +96,7 @@ export function Restock() {
           <p>
             A startup that helps people calculate how long their current
             stock of an item will last. Built in response to COVID-19, I was
-            a front end developer for ReStock and the team leader of ReStock's iOS
+            a front end developer for ReStock and the team leader of the iOS
             development group.
           </p>
         <div className="links">
@@ -203,6 +203,7 @@ const StyledProjects = styled.div`
 
   .previewImage {
     max-width: 250px;
+    height: 200px;
     border-radius: 5px;
   }
 
@@ -265,14 +266,11 @@ const StyledProjects = styled.div`
 
     .previewImage {
       max-width: 400px;
+      height: 300px;
     }
   }
 
   @media (min-width: 1100px) {
-    .previewImage {
-      max-width: 400px;
-    }
-
     .box {
       width: 960px;
       align-items: center;
@@ -282,23 +280,19 @@ const StyledProjects = styled.div`
 
 const StyledRestock = styled.div`
   .previewImage {
-    max-width: 170px;
+    width: 200px;
+    height: 200px;
     padding-bottom: 0px;
   }
 
-  @media (min-width: 700px) {
-    .previewImage {
-      max-width: 180px;
-      padding-bottom: 0px;
-
-    }
-
-}
-
   @media (min-width: 960px) {
     .previewImage {
-      max-width: 290px;
+    width: 290px;
+    height: 280px;
+    }
+
+    .previewImage {
       padding-bottom: 0px;
     }
-  }
+}
 `;
