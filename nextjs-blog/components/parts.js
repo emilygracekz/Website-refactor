@@ -27,7 +27,7 @@ export function NomadDiscover() {
               </a>
             </div>
             <div className="liveSite">
-              <a href="http://emilyk.codes/nomad-discover/">LIVE SITE</a>
+              <a href="https://emilygracekz.github.io/nomadDiscover/">LIVE SITE</a>
             </div>
           </div>
           <div className="stack">

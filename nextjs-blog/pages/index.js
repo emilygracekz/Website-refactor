@@ -20,7 +20,6 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-
       <main>
         <section className="bg">
           <h1>emily kondziola</h1>
@@ -30,7 +29,7 @@ export default function Home() {
             specializing in{" "}
             <mark>Vanilla Javascript, React and React Native.</mark> Please
             check out some of my projects below, or view my {""}
-            <a href="https://github.com/emilygracekz/Personal-website/raw/master/Emily_Kondziola_Resume_SP2020.pdf">
+            <a href="https://github.com/emilygracekz/Website-refactor/raw/master/EmilyKondziolaResume.pdf">
               resume.
             </a>
           </p>
