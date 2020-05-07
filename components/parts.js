@@ -64,7 +64,7 @@ export function ImpTimer() {
               </a>
             </div>
             <div className="liveSite">
-              <a href="http://emilyk.codes/impromptu-timer/">LIVE SITE</a>
+              <a href="/impromptu-timer">LIVE SITE</a>
             </div>
           </div>
           <div className="stack">
