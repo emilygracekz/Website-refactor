@@ -3,7 +3,7 @@ import {
   NomadDiscover,
   ImpTimer,
   Restock,
-} from "../public/styles/parts";
+} from "../components/parts";
 
 export default function Home() {
   return (
