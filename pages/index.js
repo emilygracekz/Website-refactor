@@ -67,7 +67,7 @@ export default function Home() {
         }
 
         .bg {
-            height: 50em;
+            height: 49em;
           }
 
         .projects {
