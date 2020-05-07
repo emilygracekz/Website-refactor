@@ -84,7 +84,7 @@ export default function Home() {
           letter-spacing: 1px;
           color: var(--purple);
           margin: 0;
-          padding-top: 190px;
+          padding-top: 160px;
           font-weight: lighter;
         }
 
