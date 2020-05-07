@@ -67,7 +67,7 @@ export default function Home() {
         }
 
         .bg {
-            height: 49em;
+            height: 50em;
           }
 
         .projects {
@@ -84,7 +84,7 @@ export default function Home() {
           letter-spacing: 1px;
           color: var(--purple);
           margin: 0;
-          padding-top: 200px;
+          padding-top: 190px;
           font-weight: lighter;
         }
 
