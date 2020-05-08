@@ -52,9 +52,7 @@ export default function Home() {
         <a href='https://www.linkedin.com/in/emilykondziola/'>
         <img src="images/linkedin.png"></img> 
         </a>
-        <a href='https://twitter.com/emilygracekz'>
-        <img src="images/twitter.png"></img>
-        </a>
+      
         <br />
           Nice to meet you 🤠<br />
           Drop me a line at <mark> emilygracekondziola@gmail.com</mark>
