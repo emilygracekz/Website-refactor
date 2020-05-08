@@ -96,6 +96,11 @@ export default function Home() {
           text-align: left;
         }
 
+        .bg h2 {
+          border-bottom: 1px solid var(--lightBlue);
+          padding-bottom: 20px;
+        }
+
         mark {
           background-color: var(--yellow);
           border-radius: 2px;
@@ -107,11 +112,6 @@ export default function Home() {
           font-size: 20px;
           line-height: 1.55;
         }
-
-        .bg p {
-            border-top: 1px solid var(--lightBlue);
-            padding-top: 20px;
-          }
 
         a {
           font-size: 20px;
@@ -171,6 +171,10 @@ export default function Home() {
         }
 
         @media (min-width: 700px) {
+
+          .bg p {
+            max-width: 70%;
+          }
 
           .projects {
             height: 131em;
