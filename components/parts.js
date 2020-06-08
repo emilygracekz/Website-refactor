@@ -110,7 +110,9 @@ export function Restock() {
           </div>
         </div>
         <div className="stack">
-          <img src="images/logos.png" className="stackImage"></img><img src='images/react.png' className='react'></img>
+          <img src="images/logos.png" className="stackImage"></img>
+          <img src='images/react.png' className='react'></img>
+  
         </div>
       </div>
       </div>
@@ -152,6 +154,8 @@ const StyledProjects = styled.div`
     width: 53px;
     padding-left: 6px;
   }
+
+  
 
   .repo {
       float: right;

@@ -23,9 +23,9 @@ export default function Home() {
       <main>
         <section className="bg">
           <h1>emily kondziola</h1>
-          <h2>front-end developer</h2>
+          <h2>frontend developer</h2> 
           <p>
-            Hi there, my name is Emily and I'm a front-end web developer
+            My name is Emily Kondziola and I'm a frontend web developer
             specializing in{" "}
             <mark>Vanilla Javascript, React and React Native.</mark> Please
             check out some of my projects below, or view my {""}
@@ -33,6 +33,7 @@ export default function Home() {
               resume.
             </a>
           </p>
+
         </section>
         <section className="projects">
           <h2>what i've been spending my time on</h2>
@@ -96,14 +97,10 @@ export default function Home() {
           text-align: left;
         }
 
-        .bg h2 {
-          border-bottom: 1px solid var(--lightBlue);
-          padding-bottom: 20px;
-        }
-
         mark {
           background-color: var(--yellow);
           border-radius: 2px;
+          padding: 3px;
         }
 
         p {
@@ -116,7 +113,7 @@ export default function Home() {
         a {
           font-size: 20px;
           line-height: 1.55;
-          color: var(--blue);
+          color: var(--lightBlue);
           text-decoration: none;
         }
 
@@ -146,13 +143,11 @@ export default function Home() {
 
         .projects h2 {
           font-size: 30px;
-          border-bottom: 1px solid var(--lightBlue);
           padding-bottom: 20px;
         }
 
         footer {
           width: 100%;
-          border-top: 1px solid var(--lightBlue);
           display: flex;
           justify-content: center;
           align-items: center;
