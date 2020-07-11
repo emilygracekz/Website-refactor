@@ -125,7 +125,7 @@ export function Restock() {
 
 const StyledProjects = styled.div`
   .box {
-    background: #12171e;
+    background: #c5c5c5;
     border-radius: 5px;
     padding: 25px;
     margin-top: 25px;

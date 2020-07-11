@@ -19,11 +19,8 @@ export default function Home() {
       <main>
         <section className="bg">
           <h1>emily kondziola</h1>
-          <h2>software developer</h2>
           <p>
-            My name is Emily Kondziola and I'm a frontend software developer
-            specializing in <mark>Vanilla Javascript and React.</mark> Please
-            see some of my projects below.
+            <mark>software developer @ jogg</mark>
           </p>
         </section>
         <section className="projects">
@@ -44,7 +41,7 @@ export default function Home() {
             <img src="images/linkedin.png"></img>
           </a>
           <br />
-          <mark> emilygracekondziola@gmail.com</mark>
+          emilygracekondziola@gmail.com
         </p>
       </footer>
 
@@ -65,11 +62,18 @@ export default function Home() {
           flex: 1;
         }
 
+        h1,
+        p {
+          color: #000;
+          z-index: 999;
+          position: relative;
+          text-align: center;
+        }
+
         h1 {
           font-size: 32px;
           font-family: "Merriweather", serif;
           letter-spacing: 1px;
-          color: var(--purple);
           margin: 0;
           padding-top: 150px;
           font-weight: lighter;
@@ -78,17 +82,16 @@ export default function Home() {
         h2 {
           font-size: 32px;
           font-family: "Merriweather", serif;
-          color: var(--green);
           font-style: italic;
           margin-bottom: 20px;
           margin-top: 0;
-          text-align: left;
+          text-align: center;
         }
 
         mark {
-          background-color: var(--yellow);
+          background-color: white;
           border-radius: 2px;
-          padding: 3px;
+          padding: 7px;
         }
 
         p {
@@ -96,12 +99,13 @@ export default function Home() {
           color: var(--grey);
           font-size: 20px;
           line-height: 1.55;
+          text-align: center;
         }
 
         a {
           font-size: 20px;
           line-height: 1.55;
-          color: var(--lightBlue);
+          color: rgb(217, 0, 118);
           text-decoration: none;
         }
 
@@ -154,10 +158,6 @@ export default function Home() {
         }
 
         @media (min-width: 700px) {
-          .bg p {
-            max-width: 60%;
-          }
-
           .projects {
             height: 88em;
           }
@@ -223,12 +223,12 @@ export default function Home() {
           --purple: #e635d4;
           --green: #3be8b0;
           --blue: #1da1f2;
-          --lightBlue: #65bff6;
-          --yellow: #f7dc68;
-          --dark: #26303d;
+          --lightBlue: #000;
+          --yellow: #000;
+          --dark: #e7e7e7;
           --red: #d9544d;
-          --black: #565656;
-          --grey: #bfbfbf;
+          --black: #c5c5c5;
+          --grey: #000;
         }
       `}</style>
     </div>
