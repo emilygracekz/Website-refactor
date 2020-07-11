@@ -4,37 +4,37 @@ import styled from "styled-components";
 export function NomadDiscover() {
   return (
     <StyledProjects>
-    <div className='wrapper'>
-      <div className="box">
-        <div className="image">
-          <img
-            className="previewImage"
-            src="images/nomaddiscover.png"
-            alt="Nomad Discover app"
-          />
-        </div>
-        <div className="text">
-          <h3>Nomad Discover</h3>
-          <p>
-            An app that suggests where digital nomads should go next. Nomad
-            Discover takes criteria like budget and weather to suggest a place
-            for nomads to go based off data from Nomad List.
-          </p>
-          <div className="links">
-            <div className="repo">
-              <a href="https://github.com/emilygracekz/nomadDiscover">
-                REPO
-              </a>
+      <div className="wrapper">
+        <div className="box">
+          <div className="image">
+            <img
+              className="previewImage"
+              src="images/nomaddiscover.png"
+              alt="Nomad Discover app"
+            />
+          </div>
+          <div className="text">
+            <h3>Nomad Discover</h3>
+            <p>
+              An app that suggests where digital nomads should go next. Nomad
+              Discover takes criteria like budget and weather to suggest a place
+              for nomads to go based off data from Nomad List.
+            </p>
+            <div className="links">
+              <div className="repo">
+                <a href="https://github.com/emilygracekz/nomadDiscover">REPO</a>
+              </div>
+              <div className="liveSite">
+                <a href="https://emilygracekz.github.io/nomadDiscover/">
+                  LIVE SITE
+                </a>
+              </div>
             </div>
-            <div className="liveSite">
-              <a href="https://emilygracekz.github.io/nomadDiscover/">LIVE SITE</a>
+            <div className="stack">
+              <img src="images/logos.png" className="stackImage"></img>
             </div>
           </div>
-          <div className="stack">
-            <img src="images/logos.png" className="stackImage"></img>
-          </div>
         </div>
-      </div>
       </div>
     </StyledProjects>
   );
@@ -43,35 +43,38 @@ export function NomadDiscover() {
 export function ImpTimer() {
   return (
     <StyledProjects>
-    <div className='wrapper'>
-      <div className="box">
-        <div className="image">
-          <img
-            className="previewImage"
-            src="images/imptimer.png"
-            alt="Nomad Discover app on Macbook and iPhone"
-          />
-        </div>
-        <div className="text">
-          <h3>Impromptu Timer</h3>
-          <p>
-            A tool for college forensics competitors to practice impromptu speeches. This timer counts down from seven minutes and provides a random quotation when the start button is pressed.
-          </p>
-          <div className="links">
-            <div className="repo">
-              <a href="https://github.com/emilygracekz/impromptu-timer">
-                REPO
-              </a>
+      <div className="wrapper">
+        <div className="box">
+          <div className="image">
+            <img
+              className="previewImage"
+              src="images/imptimer.png"
+              alt="Nomad Discover app on Macbook and iPhone"
+            />
+          </div>
+          <div className="text">
+            <h3>Impromptu Timer</h3>
+            <p>
+              A tool for college forensics competitors to practice impromptu
+              speeches. This timer counts down from seven minutes and provides a
+              random quotation when the start button is pressed.
+            </p>
+            <div className="links">
+              <div className="repo">
+                <a href="https://github.com/emilygracekz/impromptu-timer">
+                  REPO
+                </a>
+              </div>
+              <div className="liveSite">
+                <a href="/impromptu-timer">LIVE SITE</a>
+              </div>
             </div>
-            <div className="liveSite">
-              <a href="/impromptu-timer">LIVE SITE</a>
+            <div className="stack">
+              <img src="images/logos.png" className="stackImage"></img>
+              <img src="images/react.png" className="react"></img>
             </div>
           </div>
-          <div className="stack">
-            <img src="images/logos.png" className="stackImage"></img><img src='images/react.png' className='react'></img>
-          </div>
         </div>
-      </div>
       </div>
     </StyledProjects>
   );
@@ -80,42 +83,41 @@ export function ImpTimer() {
 export function Restock() {
   return (
     <StyledProjects>
-    <div className='wrapper'>
-      <div className="box">
-        <div className="image">
-          <StyledRestock>
-            <img
-              className="previewImage"
-              src="images/app_logo.png"
-              alt="Restock logo"
-            />
-          </StyledRestock>
-        </div>
-        <div className="text">
-          <h3>ReStock</h3>
-          <p>
-            A startup that helps people calculate how long their current
-            stock of an item will last. Built in response to COVID-19, I was
-            a front end developer for ReStock and the team leader of the iOS
-            development group.
-          </p>
-        <div className="links">
-          <div className="repo">
-            <a href="https://play.google.com/store/apps/details?id=com.zachl.restock">
-              DOWNLOAD
-            </a>
+      <div className="wrapper">
+        <div className="box">
+          <div className="image">
+            <StyledRestock>
+              <img
+                className="previewImage"
+                src="images/app_logo.png"
+                alt="Restock logo"
+              />
+            </StyledRestock>
           </div>
-          <div className="liveSite">
-            <a href="https://www.getrestock.com/">WEBSITE</a>
+          <div className="text">
+            <h3>ReStock</h3>
+            <p>
+              A startup that helps people calculate how long their current stock
+              of an item will last. Built in response to COVID-19, I was a front
+              end developer for ReStock and the team leader of the iOS
+              development group.
+            </p>
+            <div className="links">
+              <div className="repo">
+                <a href="https://play.google.com/store/apps/details?id=com.zachl.restock">
+                  DOWNLOAD
+                </a>
+              </div>
+              <div className="liveSite">
+                <a href="https://www.getrestock.com/">WEBSITE</a>
+              </div>
+            </div>
+            <div className="stack">
+              <img src="images/logos.png" className="stackImage"></img>
+              <img src="images/react.png" className="react"></img>
+            </div>
           </div>
         </div>
-        <div className="stack">
-          <img src="images/logos.png" className="stackImage"></img>
-          <img src='images/react.png' className='react'></img>
-  
-        </div>
-      </div>
-      </div>
       </div>
     </StyledProjects>
   );
@@ -155,15 +157,13 @@ const StyledProjects = styled.div`
     padding-left: 6px;
   }
 
-  
-
   .repo {
-      float: right;
-    }
+    float: right;
+  }
 
-    .liveSite {
-      float: left;
-    }
+  .liveSite {
+    float: left;
+  }
 
   a {
     color: var(--lightBlue);
@@ -182,7 +182,7 @@ const StyledProjects = styled.div`
   }
 
   a {
-    color: var(--blue);
+    color: var(--lightBlue);
     padding-top: 0px;
     text-decoration: none;
     font-weight: bold;
@@ -250,7 +250,7 @@ const StyledProjects = styled.div`
     }
 
     a {
-      color: var(--blue);
+      color: var(--lightBlue);
     }
 
     h3 {
@@ -291,12 +291,12 @@ const StyledRestock = styled.div`
 
   @media (min-width: 960px) {
     .previewImage {
-    width: 290px;
-    height: 280px;
+      width: 290px;
+      height: 280px;
     }
 
     .previewImage {
       padding-bottom: 0px;
     }
-}
+  }
 `;

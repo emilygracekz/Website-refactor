@@ -1,9 +1,5 @@
 import Head from "next/head";
-import {
-  NomadDiscover,
-  ImpTimer,
-  Restock,
-} from "../components/parts";
+import { NomadDiscover, ImpTimer, Restock } from "../components/parts";
 
 export default function Home() {
   return (
@@ -23,40 +19,32 @@ export default function Home() {
       <main>
         <section className="bg">
           <h1>emily kondziola</h1>
-          <h2>frontend developer</h2> 
+          <h2>software developer</h2>
           <p>
-            My name is Emily Kondziola and I'm a frontend web developer
-            specializing in{" "}
-            <mark>Vanilla Javascript, React and React Native.</mark> Please
-            check out some of my projects below, or view my {""}
-            <a href="https://github.com/emilygracekz/Website-refactor/raw/master/EmilyKondziolaResume.pdf">
-              resume.
-            </a>
+            My name is Emily Kondziola and I'm a frontend software developer
+            specializing in <mark>Vanilla Javascript and React.</mark> Please
+            see some of my projects below.
           </p>
-
         </section>
         <section className="projects">
-          <h2>what i've been spending my time on</h2>
+          <h2>projects</h2>
           <div className="center">
             <NomadDiscover />
             <ImpTimer />
-            <Restock />
           </div>
         </section>
       </main>
 
-      <footer className='footer'>
+      <footer className="footer">
         <p>
-        <a href='https://github.com/emilygracekz'>
-        <img src="images/github.png"></img> 
-        </a>
-        <a href='https://www.linkedin.com/in/emilykondziola/'>
-        <img src="images/linkedin.png"></img> 
-        </a>
-      
-        <br />
-          Nice to meet you 🤠<br />
-          Drop me a line at <mark> emilygracekondziola@gmail.com</mark>
+          <a href="https://github.com/emilygracekz">
+            <img src="images/github.png"></img>
+          </a>
+          <a href="https://www.linkedin.com/in/emilykondziola/">
+            <img src="images/linkedin.png"></img>
+          </a>
+          <br />
+          <mark> emilygracekondziola@gmail.com</mark>
         </p>
       </footer>
 
@@ -66,11 +54,11 @@ export default function Home() {
         }
 
         .bg {
-            height: 50em;
-          }
+          height: 50em;
+        }
 
         .projects {
-          height: 130em;
+          height: 87em;
         }
 
         main {
@@ -166,22 +154,21 @@ export default function Home() {
         }
 
         @media (min-width: 700px) {
-
           .bg p {
-            max-width: 70%;
+            max-width: 60%;
           }
 
           .projects {
-            height: 131em;
+            height: 88em;
           }
 
-          h1, h2 {
+          h1,
+          h2 {
             font-size: 45px;
           }
 
           .projects h2 {
             font-size: 40px;
-
           }
         }
 
@@ -206,16 +193,16 @@ export default function Home() {
             font-size: 50px;
           }
 
-          p, a {
+          p,
+          a {
             font-size: 25px;
           }
 
           @media (min-width: 960px) {
             .projects {
-              height: 85em;
+              height: 60em;
             }
-
-        }
+          }
         }
       `}</style>
 
@@ -241,7 +228,7 @@ export default function Home() {
           --dark: #26303d;
           --red: #d9544d;
           --black: #565656;
-          --grey: rgb(167, 167, 167);
+          --grey: #bfbfbf;
         }
       `}</style>
     </div>
