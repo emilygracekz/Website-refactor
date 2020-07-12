@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { NomadDiscover, ImpTimer, Restock } from "../components/parts";
+import { NomadDiscover, ImpTimer } from "../components/parts";
 
 export default function Home() {
   return (
@@ -22,6 +22,22 @@ export default function Home() {
           <p>
             <mark>software developer @ jogg</mark>
           </p>
+          <div className="icons">
+            <a href="https://github.com/emilygracekz">
+              <img
+                src="images/github.png"
+                alt="github"
+                className="github"
+              ></img>
+            </a>
+            <a href="https://www.linkedin.com/in/emilykondziola/">
+              <img
+                src="images/linkedin.png"
+                alt="linkedin"
+                className="linkedin"
+              ></img>
+            </a>
+          </div>
         </section>
         <section className="projects">
           <h1>projects</h1>
@@ -34,12 +50,6 @@ export default function Home() {
 
       <footer className="footer">
         <p>
-          <a href="https://github.com/emilygracekz">
-            <img src="images/github.png"></img>
-          </a>
-          <a href="https://www.linkedin.com/in/emilykondziola/">
-            <img src="images/linkedin.png"></img>
-          </a>
           <br />
           emilygracekondziola@gmail.com
         </p>
@@ -55,7 +65,7 @@ export default function Home() {
         }
 
         .projects {
-          height: 87em;
+          height: 92em;
         }
 
         main {
@@ -147,10 +157,20 @@ export default function Home() {
           height: 10em;
         }
 
-        footer img {
+        .linkedin,
+        .github {
           max-width: 30px;
-          margin-left: 6px;
-          margin-right: 6px;
+        }
+
+        .linkedin {
+          margin-left: 20px;
+        }
+
+        .icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
         }
 
         img:hover {
@@ -159,7 +179,7 @@ export default function Home() {
 
         @media (min-width: 700px) {
           .projects {
-            height: 88em;
+            height: 93em;
           }
 
           h1,
@@ -178,7 +198,7 @@ export default function Home() {
           }
 
           .projects {
-            height: 135em;
+            height: 140em;
           }
 
           h1 {
@@ -200,7 +220,7 @@ export default function Home() {
 
           @media (min-width: 960px) {
             .projects {
-              height: 60em;
+              height: 65em;
             }
           }
         }

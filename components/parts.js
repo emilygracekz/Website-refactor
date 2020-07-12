@@ -80,49 +80,6 @@ export function ImpTimer() {
   );
 }
 
-export function Restock() {
-  return (
-    <StyledProjects>
-      <div className="wrapper">
-        <div className="box">
-          <div className="image">
-            <StyledRestock>
-              <img
-                className="previewImage"
-                src="images/app_logo.png"
-                alt="Restock logo"
-              />
-            </StyledRestock>
-          </div>
-          <div className="text">
-            <h3>ReStock</h3>
-            <p>
-              A startup that helps people calculate how long their current stock
-              of an item will last. Built in response to COVID-19, I was a front
-              end developer for ReStock and the team leader of the iOS
-              development group.
-            </p>
-            <div className="links">
-              <div className="repo">
-                <a href="https://play.google.com/store/apps/details?id=com.zachl.restock">
-                  DOWNLOAD
-                </a>
-              </div>
-              <div className="liveSite">
-                <a href="https://www.getrestock.com/">WEBSITE</a>
-              </div>
-            </div>
-            <div className="stack">
-              <img src="images/logos.png" className="stackImage"></img>
-              <img src="images/react.png" className="react"></img>
-            </div>
-          </div>
-        </div>
-      </div>
-    </StyledProjects>
-  );
-}
-
 const StyledProjects = styled.div`
   .box {
     background: #c5c5c5;
@@ -278,25 +235,6 @@ const StyledProjects = styled.div`
     .box {
       width: 960px;
       align-items: center;
-    }
-  }
-`;
-
-const StyledRestock = styled.div`
-  .previewImage {
-    width: 200px;
-    height: 200px;
-    padding-bottom: 0px;
-  }
-
-  @media (min-width: 960px) {
-    .previewImage {
-      width: 290px;
-      height: 280px;
-    }
-
-    .previewImage {
-      padding-bottom: 0px;
     }
   }
 `;
