@@ -24,7 +24,7 @@ export default function Home() {
           </p>
         </section>
         <section className="projects">
-          <h2>projects</h2>
+          <h1>projects</h1>
           <div className="center">
             <NomadDiscover />
             <ImpTimer />
