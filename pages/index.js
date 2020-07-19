@@ -17,10 +17,10 @@ export default function Home() {
         />
       </Head>
       <main>
-        <section className="bg">
+        <section className="top">
           <h1>emily kondziola</h1>
           <p>
-            <mark>software developer @ jogg</mark>
+            <mark>react developer @ <a href="https://studio.jogg.co/">jogg</a></mark>
           </p>
           <div className="icons">
             <a href="https://github.com/emilygracekz">
@@ -60,7 +60,7 @@ export default function Home() {
           min-height: 100vh;
         }
 
-        .bg {
+        .top {
           height: 50em;
         }
 
@@ -115,8 +115,8 @@ export default function Home() {
         a {
           font-size: 20px;
           line-height: 1.55;
-          color: rgb(217, 0, 118);
           text-decoration: none;
+          color: #000;
         }
 
         a:hover {
@@ -193,7 +193,7 @@ export default function Home() {
         }
 
         @media (min-width: 960px) {
-          .bg {
+          .top {
             height: 50em;
           }
 
