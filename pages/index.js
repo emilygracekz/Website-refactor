@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </section>
         <section className="projects">
-          <h1>projects</h1>
+          <h1>selected projects</h1>
           <div className="center">
             <NomadDiscover />
             <ImpTimer />
