@@ -1,54 +1,76 @@
-import Head from "next/head";
-import { NomadDiscover, ImpTimer } from "../components/parts";
+import Head from 'next/head';
+import ProjectCard from '../components/ProjectCard';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className='container'>
       <Head>
         <title>Emily Kondziola</title>
-        <link rel="icon" href="/home.png" />
+        <link rel='icon' href='/home.png' />
         <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap'
+          rel='stylesheet'
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap'
+          rel='stylesheet'
         />
       </Head>
       <main>
-        <section className="top">
+        <section className='top'>
           <h1>emily kondziola</h1>
           <p>
-            <mark>react developer @ <a href="https://studio.jogg.co/">jogg</a></mark>
+            <mark>
+              react developer @ <a href='https://studio.jogg.co/'>jogg</a>
+            </mark>
           </p>
-          <div className="icons">
-            <a href="https://github.com/emilygracekz">
+          <div className='icons'>
+            <a href='https://github.com/emilygracekz'>
               <img
-                src="images/github.png"
-                alt="github"
-                className="github"
+                src='images/github.png'
+                alt='github'
+                className='github'
               ></img>
             </a>
-            <a href="https://www.linkedin.com/in/emilykondziola/">
+            <a href='https://www.linkedin.com/in/emilykondziola/'>
               <img
-                src="images/linkedin.png"
-                alt="linkedin"
-                className="linkedin"
+                src='images/linkedin.png'
+                alt='linkedin'
+                className='linkedin'
               ></img>
             </a>
           </div>
         </section>
-        <section className="projects">
+        <section className='projects'>
           <h1>selected projects</h1>
-          <div className="center">
-            <NomadDiscover />
-            <ImpTimer />
+          <div className='center'>
+            <ProjectCard
+              headline={'Nomad Discover'}
+              body={
+                'An app that suggests where digital nomads should go next. Nomad Discover takes criteria like budget and weather to suggest a place for nomads to go based off data from Nomad List.'
+              }
+              sitePic={'images/nomaddiscover.png'}
+              repo={'https://github.com/emilygracekz/nomadDiscover'}
+              liveSite={'https://emilygracekz.github.io/nomadDiscover/'}
+              image={'images/logos.png'}
+            />
+
+            <ProjectCard
+              headline={'Impromptu Timer'}
+              body={
+                'A tool for college forensics competitors to practice impromptu speeches. This timer counts down from seven minutes and provides a random quotation when the start button is pressed.'
+              }
+              sitePic={'images/imptimer.png'}
+              repo={'https://github.com/emilygracekz/impromptu-timer'}
+              liveSite={'/impromptu-timer'}
+              image={'images/logos.png'}
+              secondImage={'images/react.png'}
+            />
           </div>
         </section>
       </main>
 
-      <footer className="footer">
+      <footer className='footer'>
         <p>
           <br />
           emilygracekondziola@gmail.com
@@ -82,7 +104,7 @@ export default function Home() {
 
         h1 {
           font-size: 32px;
-          font-family: "Merriweather", serif;
+          font-family: 'Merriweather', serif;
           letter-spacing: 1px;
           margin: 0;
           padding-top: 150px;
@@ -91,7 +113,7 @@ export default function Home() {
 
         h2 {
           font-size: 32px;
-          font-family: "Merriweather", serif;
+          font-family: 'Merriweather', serif;
           font-style: italic;
           margin-bottom: 20px;
           margin-top: 0;
@@ -105,7 +127,7 @@ export default function Home() {
         }
 
         p {
-          font-family: "Montserrat", sans-serif;
+          font-family: 'Montserrat', sans-serif;
           color: var(--grey);
           font-size: 20px;
           line-height: 1.55;
@@ -232,7 +254,7 @@ export default function Home() {
           padding: 15px;
           margin: 0;
           background-color: var(--dark);
-          font-family: "Montserrat", sans-serif;
+          font-family: 'Montserrat', sans-serif;
         }
 
         * {

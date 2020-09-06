@@ -1,24 +1,23 @@
-import Head from "next/head";
-import Timer from "../components/timer";
+import Head from 'next/head';
+import Timer from '../components/timer';
 import Quote from '../components/quote';
 
-
-const ImpromptuTimer =() => {
-    return (
-<div className="container">
+const ImpromptuTimer = () => {
+  return (
+    <div className='container'>
       <Head>
         <title>Impromptu Timer</title>
-        <link rel="icon" href="/timerpic.png" />
+        <link rel='icon' href='/timerpic.png' />
       </Head>
-      
-      <main>  
+
+      <main>
         <Timer />
-        <Quote /> 
+        <Quote />
       </main>
 
       <footer>
-        <a href="https://github.com/emilygracekz">
-          <img src="/github.png" alt="github" className="logo" />
+        <a href='https://github.com/emilygracekz'>
+          <img src='/github.png' alt='github' className='logo' />
         </a>
       </footer>
       <style jsx>{`
@@ -100,7 +99,7 @@ const ImpromptuTimer =() => {
         }
       `}</style>
     </div>
-    )
-}
+  );
+};
 
 export default ImpromptuTimer;

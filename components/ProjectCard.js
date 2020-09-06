@@ -1,84 +1,45 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-export function NomadDiscover() {
+const ProjectCard = ({
+  headline,
+  body,
+  sitePic,
+  repo,
+  liveSite,
+  image,
+  secondImage,
+}) => {
   return (
     <StyledProjects>
-      <div className="wrapper">
-        <div className="box">
-          <div className="image">
-            <img
-              className="previewImage"
-              src="images/nomaddiscover.png"
-              alt="Nomad Discover app"
-            />
+      <div className='wrapper'>
+        <div className='box'>
+          <div className='image'>
+            <img className='previewImage' src={sitePic} alt='' />
           </div>
-          <div className="text">
-            <h3>Nomad Discover</h3>
-            <p>
-              An app that suggests where digital nomads should go next. Nomad
-              Discover takes criteria like budget and weather to suggest a place
-              for nomads to go based off data from Nomad List.
-            </p>
-            <div className="links">
-              <div className="repo">
-                <a href="https://github.com/emilygracekz/nomadDiscover">REPO</a>
+          <div className='text'>
+            <h3>{headline}</h3>
+            <p>{body}</p>
+            <div className='links'>
+              <div className='repo'>
+                <a href={repo}>REPO</a>
               </div>
-              <div className="liveSite">
-                <a href="https://emilygracekz.github.io/nomadDiscover/">
-                  LIVE SITE
-                </a>
+              <div className='liveSite'>
+                <a href={liveSite}>LIVE SITE</a>
               </div>
             </div>
-            <div className="stack">
-              <img src="images/logos.png" className="stackImage"></img>
+            <div className='stack'>
+              <img src={image} className='stackImage'></img>
+              {secondImage ? (
+                <img src={secondImage} className='react'></img>
+              ) : null}
             </div>
           </div>
         </div>
       </div>
     </StyledProjects>
   );
-}
-
-export function ImpTimer() {
-  return (
-    <StyledProjects>
-      <div className="wrapper">
-        <div className="box">
-          <div className="image">
-            <img
-              className="previewImage"
-              src="images/imptimer.png"
-              alt="Nomad Discover app on Macbook and iPhone"
-            />
-          </div>
-          <div className="text">
-            <h3>Impromptu Timer</h3>
-            <p>
-              A tool for college forensics competitors to practice impromptu
-              speeches. This timer counts down from seven minutes and provides a
-              random quotation when the start button is pressed.
-            </p>
-            <div className="links">
-              <div className="repo">
-                <a href="https://github.com/emilygracekz/impromptu-timer">
-                  REPO
-                </a>
-              </div>
-              <div className="liveSite">
-                <a href="/impromptu-timer">LIVE SITE</a>
-              </div>
-            </div>
-            <div className="stack">
-              <img src="images/logos.png" className="stackImage"></img>
-              <img src="images/react.png" className="react"></img>
-            </div>
-          </div>
-        </div>
-      </div>
-    </StyledProjects>
-  );
-}
+};
 
 const StyledProjects = styled.div`
   .box {
@@ -238,3 +199,5 @@ const StyledProjects = styled.div`
     }
   }
 `;
+
+export default ProjectCard;
