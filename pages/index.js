@@ -20,10 +20,9 @@ export default function Home() {
         <section className='top'>
           <h1>emily kondziola</h1>
           <p>
-            <mark>
-              react developer @ <a href='https://studio.jogg.co/'>jogg</a>
-            </mark>
+            react developer @ <a href='https://studio.jogg.co/'>jogg</a>
           </p>
+
           <div className='icons'>
             <a href='https://github.com/emilygracekz'>
               <img
@@ -96,7 +95,7 @@ export default function Home() {
 
         h1,
         p {
-          color: #000;
+          color: #ffefb9;
           z-index: 999;
           position: relative;
           text-align: center;
@@ -128,7 +127,7 @@ export default function Home() {
 
         p {
           font-family: 'Montserrat', sans-serif;
-          color: var(--grey);
+          color: #ffefb9;
           font-size: 20px;
           line-height: 1.55;
           text-align: center;
@@ -138,7 +137,7 @@ export default function Home() {
           font-size: 20px;
           line-height: 1.55;
           text-decoration: none;
-          color: #000;
+          color: #ffefb9;
         }
 
         a:hover {
@@ -253,7 +252,7 @@ export default function Home() {
         body {
           padding: 15px;
           margin: 0;
-          background-color: var(--dark);
+          background-color: var(--darkBlue);
           font-family: 'Montserrat', sans-serif;
         }
 
@@ -265,12 +264,9 @@ export default function Home() {
           --purple: #e635d4;
           --green: #3be8b0;
           --blue: #1da1f2;
-          --lightBlue: #000;
-          --yellow: #000;
-          --dark: #e7e7e7;
+          --yellow: #ffefb9;
+          --darkBlue: #134080;
           --red: #d9544d;
-          --black: #c5c5c5;
-          --grey: #000;
         }
       `}</style>
     </div>

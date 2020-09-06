@@ -43,7 +43,7 @@ const ProjectCard = ({
 
 const StyledProjects = styled.div`
   .box {
-    background: #c5c5c5;
+    background: #1d6590;
     border-radius: 5px;
     padding: 25px;
     margin-top: 25px;
@@ -84,7 +84,7 @@ const StyledProjects = styled.div`
   }
 
   a {
-    color: var(--lightBlue);
+    color: var(--yellow);
     margin-top: 30px;
   }
 
@@ -100,7 +100,7 @@ const StyledProjects = styled.div`
   }
 
   a {
-    color: var(--lightBlue);
+    color: var(--yellow);
     padding-top: 0px;
     text-decoration: none;
     font-weight: bold;
@@ -113,10 +113,10 @@ const StyledProjects = styled.div`
   }
 
   p {
-    color: var(--grey);
+    color: var(--yellow);
     text-decoration: none;
     font-size: 20px;
-    border-bottom: 1px solid var(--dark);
+    border-bottom: 1px solid var(--darkBlue);
     padding-bottom: 10px;
     margin-top: 5px;
     text-align: left;
@@ -168,7 +168,7 @@ const StyledProjects = styled.div`
     }
 
     a {
-      color: var(--lightBlue);
+      color: var(--yellow);
     }
 
     h3 {
